@@ -1,0 +1,16 @@
+<h1>Edit</h1>
+
+<%= @blog.title %>
+<%= @blog.text %>
+<%= @blog.author %>
+<%= @blog.date %>
+<%= @blog.time %>
+
+<form action="/delete/" method="post">
+				<input type="hidden" name="_method" value="delete">
+				<input type="submit" value="Delete">
+</form>
+
+<a href="/">Home</a>
+<a href="/create">Create</a>
+<a href="/viewpost">View Post</a>
