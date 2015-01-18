@@ -3,14 +3,8 @@
 <% @blogs.each do |blog|%>
 	<li>
 		<strong><a href="/blog/<%= blog.id %>"><%= blog.title %></a></strong>
-		
-		<%= blog.text %>
-		<%= blog.author %>
-		<%= blog.date %>
-		<%= blog.time %>
 	</li>
 <%end%>
-
+<br>
 <a href="/create">Create</a>
-<a href="/edit">Edit</a>
-<a href="/viewpost">View Post</a>
+

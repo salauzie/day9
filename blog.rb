@@ -60,10 +60,14 @@ get '/blog/:id' do
 	erb :edit
 end
 
-delete '/delete_blog/:id' do
+delete '/delete/:id' do
 	@blog = BlogPost.get params[:id]
 	@blog.destroy
 	erb :edit
 	redirect to '/'
+end
+
+get '/delete' do
+	@blogs = BlogPost.all
 end
 
