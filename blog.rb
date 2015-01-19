@@ -65,8 +65,8 @@ end
 delete '/delete/:id' do
 	@blog = BlogPost.get params[:id]
 	@blog.destroy
-	erb :edit
 	redirect to '/'
+	erb :edit
 end
 
 get '/delete' do
