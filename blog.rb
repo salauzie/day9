@@ -73,3 +73,13 @@ get '/delete' do
 	@blogs = BlogPost.all
 end
 
+get '/editpost' do
+	@blog = BlogPost.all	
+end
+
+patch '/editpost/:id' do
+	@blog = BlogPost.get params[:id]
+	@blog.update post:params[:editpost]
+	redirect '/'
+	erb :edit
+end

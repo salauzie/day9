@@ -3,6 +3,16 @@
 <% @blogs.each do |blog|%>
 	<li>
 		<strong><a href="/blog/<%= blog.id %>"><%= blog.title %></a></strong>
+		<br>
+		<%= blog.post %>
+		<br>
+		<%= blog.text %>
+		<br>
+		<%= blog.author %>
+		<br>
+		<%= blog.date %>
+		<br>
+		<%= blog.time %>
 	</li>
 <%end%>
 <br>
