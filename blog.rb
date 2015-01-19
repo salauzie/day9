@@ -13,6 +13,7 @@ class BlogPost
 	# what is resource?
 	property :id, Serial
 	property :title, String
+	property :post, Text
 	property :text, String
 	property :author, String
 	property :date, String
@@ -45,6 +46,7 @@ post '/add_blog' do
 	p params
 	@blog = BlogPost.new
 	@blog.title = params[:title]
+	@blog.post = params[:post]
 	@blog.text = params[:text]
 	@blog.author = params[:author]
 	@blog.date = params[:date]
