@@ -27,19 +27,19 @@ DataMapper.finalize.auto_upgrade!
 get '/' do
 	@blogs = BlogPost.all
 	# functions like BlogPost.new, @blogs can be called anything, .all is everything in the list
-	erb :index
+	erb :index, layout: :layout
 end
 
 get '/create' do
-	erb :create
+	erb :create, layout: :layout
 end
 
 get '/edit' do
-	erb :edit
+	erb :edit, layout: :layout
 end
 
 get '/viewpost' do
-	erb :viewpost
+	erb :viewpost, layout: :layout
 end
 
 post '/add_blog' do
@@ -74,7 +74,7 @@ get '/delete' do
 end
 
 get '/editpost' do
-	@blog = BlogPost.all	
+	@blogs = BlogPost.all	
 end
 
 patch '/editpost/:id' do

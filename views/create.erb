@@ -1,30 +1,41 @@
-<h1>Create</h1>
+<br>
+<br>
+<body>
+	<div class="innercontainer">
+	<form action="/add_blog" method="post">
 
-<form action="/add_blog" method="post">
-
-	<label>Title</label>
-	<input type="text" name="title">
-	<p>
-	<textarea type="text" name="post" cols="50" rows="5" placeholder="Your Post!"></textarea>
-	<br />
-	<p>
-	<label>Text</label>
-	<input type="text" name="text">
-	<p>
-	<label>Author</label>
-	<!-- labels the input box  -->
-	<input type="text" name="author">
-	<!-- says what type of info is going in text box and which object -->
-	<p>
-	<label>Date</label>
-	<input type="text" name="date">
-	<p>
-	<label>Time</label>
-	<input type="text" name="time">	
-	<p>
-	<input type="submit" value="Post!">	
-<!-- makes the submit button and allows you to title it -->
-</form>
+		<label>Title:</label>
+		<br>
+		<input type="text" name="title">
+		<p>
+		<textarea type="text" name="post" cols="50" rows="5" placeholder="Your Post!"></textarea>
+		<br />
+		<p>
+		<label>Comments:</label>
+		<br>
+		<input type="text" name="text">
+		<p>
+		<label>Author:</label>
+		<br>
+		<!-- labels the input box  -->
+		<input type="text" name="author">
+		<!-- says what type of info is going in text box and which object -->
+		<p>
+		<label>Date:</label>
+		<br>
+		<input type="text" name="date">
+		<p>
+		<label>Time:</label>
+		<br>
+		<input type="text" name="time">	
+		<p>
+		<input class="buttons" type="submit" value="Post!">	
+	<!-- makes the submit button and allows you to title it -->
+	</form>
+</div>
+</body>	
 <p>
+<footer>	
 <a href="./">Home</a>
+</footer>
 

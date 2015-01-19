@@ -1,12 +1,18 @@
-<h1>Blog</h1>
-
+<br>
+<br>
+<br>
+<body>
 <% @blogs.each do |blog|%>
-	<li>
+	<div class="container">
+	<li class="innercontainer">
 		<strong><a href="/blog/<%= blog.id %>"><%= blog.title %></a></strong>
+		<br>
 		<br>
 		<%= blog.post %>
 		<br>
+		<br>
 		<%= blog.text %>
+		<br>
 		<br>
 		<%= blog.author %>
 		<br>
@@ -14,7 +20,16 @@
 		<br>
 		<%= blog.time %>
 	</li>
+	<p>
+	<p>
+</div>
+<br>
+<br>
 <%end%>
 <br>
-<a href="/create">Create</a>
 
+</body>
+
+<footer>
+<a href="/create">Create</a>
+<footer>

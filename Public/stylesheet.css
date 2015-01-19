@@ -1,0 +1,95 @@
+body {
+	text-align: center;
+	background-image: url(/tea-plantation-004.jpg);
+	background-repeat: none;
+	background-size: cover;
+	font-family: "Abel";
+	color: #A34719;
+	font-weight: bolder;
+}
+
+body a {
+	text-decoration: none;
+	color: #A34719;
+	font-size: 50px;
+}
+
+body a:hover{
+	color: #6C9619;
+}
+
+body li {
+	list-style-type: none
+}
+
+.container {
+	position: center;
+	width: cover;
+	height: cover;
+	display: block;
+	margin: 0 auto;
+	/*margin-bottom: 100px;*/
+	
+	/*margin-left: 100px;
+	margin-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;*/
+}
+
+.innercontainer {
+	/*width: 50%;*/
+	/*height: 50%;*/
+	/*padding-left: 75px;
+	padding-right: 75px;
+	padding-top: 75px;
+	padding-bottom: 75px;*/
+	background-color: rgba(240, 248, 255, .8);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 5px;
+	margin-left: 100px;
+	margin-right: 100px;
+}	
+
+footer a {
+	text-decoration: none;
+	font-size: 80px;
+	color: rgba(240, 248, 255, .7);
+}
+
+footer a:hover {
+	color: #6C9619;
+}
+
+input {
+	border: none;
+	background: none;
+	border-bottom: 1px solid #A34719;
+	color: #6C9619;
+	outline: 0;
+	text-align: center;
+	font-size: 15px;
+}
+
+textarea {
+	color: #6C9619;
+	border: none;
+	background: none;
+	outline: 0;
+	text-align: center;
+	font-size: 15px;
+}
+
+.buttons {
+	color: #A34719;
+	border: 1px solid #A34719;
+	background: #C89175;
+	box-shadow: 1px 1px 1px #A34719;
+}
+
+.buttons:hover {
+	font-style: italic;
+	font-size: medium;
+	border: 3px solid #A34719;
+	box-shadow: 3px 3px 3px #A34719;
+}	
