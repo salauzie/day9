@@ -1,35 +1,41 @@
+
+
 <br>
 <br>
 <body>
 <div class="innercontainer">
-<strong><%= @blog.title %></strong>
+<div>Click and type to edit text</div>
+<br>
+	<form action="/editpost/<%= @blog.id %>" name="edittitle" method="post">
+				<textarea type="text" name="edittitle" method="post" cols="30" rows="1"><%= @blog.title%></textarea>
+				<input type="hidden" name="_method" value="patch">
+				<br>
+				<input class="buttons" type="submit" value="Edit">
+
 <br>
 <br>
 <form action="/editpost/<%= @blog.id %>" name="editpost" method="post">
-				<textarea type="text" name="editpost" method="post" cols="50" rows="5"><%= @blog.post %></textarea>
+				<textarea type="text" name="editpost" method="post" cols="50" rows="1"><%= @blog.post %></textarea>
 				<input type="hidden" name="_method" value="patch">
 				<br>
 				<input class="buttons" type="submit" value="Edit">
 </form>
+
+<label>Author: </label><%= @blog.author %>
 <br>
+<label>Date: </label><%= @blog.date %>
 <br>
-<%= @blog.text %>
+<label>Time: </label><%= @blog.time %>
 <br>
-<br>
-<%= @blog.author %>
-<br>
-<%= @blog.date %>
-<br>
-<%= @blog.time %>
 <br>
 <form action="/delete/<%= @blog.id %>" method="post">
 				<input type="hidden" name="_method" value="delete">
-				<input class="buttons" type="submit" value="Delete">
+				<input class="buttons" type="submit" value="Delete Post">
 </form>
 </div>
 </body>
 
+<footer>
 <a href="/">Home</a>
-|
 <a href="/create">Create</a>
-
+</footer>

@@ -14,7 +14,6 @@ class BlogPost
 	property :id, Serial
 	property :title, String
 	property :post, Text
-	property :text, String
 	property :author, String
 	property :date, String
 	property :time, String
@@ -47,7 +46,6 @@ post '/add_blog' do
 	@blog = BlogPost.new
 	@blog.title = params[:title]
 	@blog.post = params[:post]
-	@blog.text = params[:text]
 	@blog.author = params[:author]
 	@blog.date = params[:date]
 	@blog.time = params[:time]
@@ -79,7 +77,7 @@ end
 
 patch '/editpost/:id' do
 	@blog = BlogPost.get params[:id]
+	@blog.update title:params[:edittitle]
 	@blog.update post:params[:editpost]
-	redirect '/'
 	erb :edit
 end
